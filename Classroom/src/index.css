@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: raleway-semibold;
+  src: url(../src/assets/Font/Raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
   font-family: raleway-bold;
   src: url(../src/assets/Font/Raleway/Raleway-Bold.ttf);
 }

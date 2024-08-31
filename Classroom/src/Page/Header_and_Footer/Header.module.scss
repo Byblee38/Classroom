@@ -14,6 +14,8 @@
        flex-direction: row;
        gap: 1rem;
        padding-left: 1rem;
+       align-self: center;
+
 
         .logokelas, .namakelas
         {
@@ -27,6 +29,12 @@
      }
 
     .drawer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
         .icon
         {
             height: 2rem;
@@ -49,6 +57,7 @@
                 font-size: 20px;
                 color: #f0f5ff;
                 cursor: pointer;
+                font-family: raleway-semibold;
             }
         }
 

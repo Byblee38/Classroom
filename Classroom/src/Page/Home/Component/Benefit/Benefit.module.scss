@@ -1,0 +1,35 @@
+@import url(../../../../index.css);
+
+.benefit
+{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .chip{
+            display: flex;
+            height: auto;
+            width: max-content;
+            padding: 0px 14px;
+            border-radius: 6px;
+            border: 2px solid #000;
+            
+            .textchip{
+                font-size: 14px;
+                
+            }
+        }
+    }
+
+    .header{
+        font-size: 38px;
+        font-family: raleway-bold;
+        font-weight: 700;
+    }
+}
