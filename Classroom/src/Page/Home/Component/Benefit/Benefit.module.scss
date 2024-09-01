@@ -5,7 +5,7 @@
     color: black;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    margin: 3rem 0rem;
     
     .text{
         display: flex;
@@ -25,11 +25,93 @@
                 
             }
         }
+
+        .header{
+            font-size: 38px;
+            font-family: raleway-bold;
+            font-weight: 700;
+            margin-bottom: -5px;
+        }
     }
 
-    .header{
-        font-size: 38px;
-        font-family: raleway-bold;
-        font-weight: 700;
+    .benecard
+    {
+        display: flex;
+        flex-direction: column;
+
+        .beneicon
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            padding: 8px;
+            width: 56px;
+            height: 56px;
+            border: 2px solid #262626;
+            background-color: #99befe;
+            margin: 25px 0px -40px 25px;
+            position: static;
+            z-index: 1;
+
+            .logoicon
+            {
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        .information
+        {
+            display: flex;
+            padding: 50px 40px 30px 30px;
+            flex-direction: column;
+            align-self: stretch;
+            border-radius: 10px;
+            border: 2px solid #262626;
+            background:  #FFF;
+            box-shadow: 4px 4px 0px 1px #1E1E1E;
+
+            .texttitle
+            {
+                font-size: 22px;
+                font-family: raleway-bold;
+                margin-bottom: -5px;
+            }
+
+            .textparagraf
+            {
+                font-size: 16px;
+                font-family: outfit;
+            }
+        }
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .benefit
+    {
+        display: flex;
+        flex-direction: column;
+
+       .card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 25px;
+            width: 100%;
+            overflow-x: scroll;
+
+            .benecard{
+               .information{
+                   width: 300px;
+               }
+            }
+       }
+
+       .card::-webkit-scrollbar
+       {
+           display: none;
+       }
+    }    
 }
